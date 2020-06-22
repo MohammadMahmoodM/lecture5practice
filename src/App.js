@@ -5,8 +5,9 @@ import valueContext from './valueContext';
 
 function App() {
   //let [number, setNumber] = React.useState(45);
-  let value = 82;
-  return (
+  //let value = 82;
+  let value = React.useState(82);
+  return (   
     // without valueContext.Provider it will give default value.
     <valueContext.Provider value={value}>    
       <div>
